@@ -1,0 +1,20 @@
+algorithm insertion
+var 
+tab:array_of integer[n];
+i,j,tmp:integer;
+begin
+for i from 1 to n-1 step 1 do
+tmp:=tab[i];
+j:=i-1;
+while(j>0 )do 
+if (tmp<tab[j]) then
+tab[j+1]:=tab[j];
+end if 
+else
+tab[j+1]:= tmp;
+j--
+end while
+end_for 
+
+
+end
